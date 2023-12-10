@@ -86,6 +86,10 @@ def CB(normal_matrix,tumor_matrix,nums,output_dir,kingdom):
     for bacteria in Characteristic_bacteria[1:]:
         df = pd.concat([df, matrix[matrix['name'] == bacteria]], ignore_index=True)
     cb_matrix = df
+    # 保存cb_matrix
+    file = output_dir + "/cb_matrix.txt"
+    cb_matrix.to_csv(file, sep='\t',index=None)
+    print("cb_matrix has been saved in {}".format(file))
     # 求取特征菌在N/T对中的丰度比值矩阵
     new_col_names = ['name']
     for i in range(len(names_N)):
@@ -100,6 +104,9 @@ def CB(normal_matrix,tumor_matrix,nums,output_dir,kingdom):
     #获得用于后续绘图的数据并保存
     labels,data,samples = get_plot_data(ratio_matrix)
     save(labels,data,samples,output_dir)
+
+
+
 
 #参数
 parser = argparse.ArgumentParser(

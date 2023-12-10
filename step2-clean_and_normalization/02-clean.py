@@ -110,7 +110,6 @@ if not args.list is None:
     print("\nclean_by_list")
     normal_matrix,tumor_matrix = clean_by_list(normal_matrix,tumor_matrix,args.list.split(','))
 
-
 #save
 print("\nsave")
 save(normal_matrix,args.normal_files.split('/')[-1],args.output_dir)
