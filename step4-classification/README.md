@@ -18,5 +18,6 @@ classification_results has already been saved in ./results//method1/classificati
 ```shell
  python ./02-method2.py `
  -cbm ./data/cb_matrix.txt `
- -o ./results/ 
+ -o ./results/ `
+ -n 5
 ```

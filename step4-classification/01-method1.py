@@ -39,7 +39,6 @@ Required_Arguments.add_argument("-o","--output_dir", help="Directory where outpu
 
 Required_Arguments.add_argument("-k","--kingdom", help="The kingdom types include bacteria, archaea, fungi , Eukaryota , etc.")
 
-
 Optional_Arguments = parser.add_argument_group('Optional_Arguments')
 
 Optional_Arguments.add_argument("-cb","--characteristic_bacteria", help="Characteristic bacteria for sample classification.")
