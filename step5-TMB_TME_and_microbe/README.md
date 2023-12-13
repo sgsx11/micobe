@@ -18,7 +18,14 @@ python ./01-method1.py -cr ./data/binary_classification_results.json -o ./result
 
 ### 02-method2.py
 ```shell
-
+ python ./02-method2.py `
+ -cr ./data/multi_classification_results.json `
+ -o ./results/ `
+ -tmb ./data/TMB.txt `
+ -tme ./data/P_TME_results.txt
+```
+```shell
+python ./02-method2.py -cr ./data/multi_classification_results.json -o ./results/ -tmb ./data/TMB.txt -tme ./data/P_TME_results.txt
 ```
 
 

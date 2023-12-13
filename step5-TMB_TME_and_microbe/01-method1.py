@@ -12,7 +12,6 @@ def save(dict_file,file_name,output_dir):
         json.dump(json_str, json_file)
     print("results has already been saved in {}".format(output_dir + '/method1/' + file_name))
 
-
 def get_low_high_samples(classification_result):
     # 读取step4的分类结果
     with open(classification_result, "r") as json_file:
@@ -83,7 +82,7 @@ def TME(classification_result,tme_dir,output_dir):
     print("labels:",colnames)
     print("low_tme:",low_data)
     print("high_tme:",high_data)
-    save_dict = {"labels": colnames ,"low_tme":low_data, "high_data":high_data}
+    save_dict = {"labels": colnames ,"low_tme" : low_data, "high_data" : high_data}
     save(save_dict, "tme_result.json", output_dir)
     # 保存结果为json格式
 
