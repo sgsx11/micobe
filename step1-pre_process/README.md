@@ -77,8 +77,6 @@ Run CIBERSORT: Once you have installed the CIBERSORT package and prepared your i
 CIBERSORT(input_data, signature_matrix, output_file)
 ```
 
-
-
 input_data is your input gene expression matrix.
 signature_matrix is the signature matrix provided by CIBERSORT, which contains the gene expression profiles of the cell types you want to deconvolve.
 output_file is the path where you want to save the deconvolution results.
